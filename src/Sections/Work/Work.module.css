@@ -1,0 +1,26 @@
+.work_section {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 35rem);
+  grid-auto-rows: auto;
+  align-content: space-around;
+  justify-content: space-between;
+}
+.see_moreBtn {
+  transition: 250ms all;
+}
+.see_moreBtn:hover {
+  color: var(--red);
+}
+@media screen and (max-width: 838px) {
+  .work_section {
+    justify-content: center;
+  }
+  .work_section {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .see_more {
+    margin-bottom: 2rem;
+  }
+}
